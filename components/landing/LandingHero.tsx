@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, CalendarCheck, MailCheck, Palette, QrCode } from 'lucide-react';
 
@@ -36,13 +35,15 @@ export function LandingHero() {
               Reservar mi invitacion ahora
               <MailCheck size={16} />
             </a>
-            <Link
-              href="/demo"
+            <a
+              href="https://boda.psicodemy.com"
+              target="_blank"
+              rel="noreferrer"
               className="focus-ring inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/80 px-6 py-3 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/5"
             >
               Ver ejemplo real
               <ArrowRight size={16} />
-            </Link>
+            </a>
           </div>
 
           <ul className="mt-8 grid gap-2 sm:grid-cols-2">

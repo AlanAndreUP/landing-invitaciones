@@ -1,13 +1,15 @@
 'use client';
 
 import { FormEvent, useState } from 'react';
-import Link from 'next/link';
 import { ArrowRight, CalendarDays, MessageCircleMore } from 'lucide-react';
 
 const RECIPIENT_EMAIL = 'hola@invitaciones-elegantes.com';
+const CONTACT_API_URL =  'https://round-paper-40da.alanenmexico12.workers.dev/';
 
 export function ContactSection() {
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -15,14 +17,41 @@ export function ContactSection() {
     message: ''
   });
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setError(null);
+
+    if (CONTACT_API_URL) {
+      setLoading(true);
+      try {
+        const res = await fetch(CONTACT_API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: form.name.trim(),
+            email: form.email.trim(),
+            eventDate: form.eventDate || undefined,
+            message: form.message.trim()
+          })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          setError(data.error || 'No se pudo enviar. Intenta de nuevo.');
+          return;
+        }
+        setSent(true);
+      } catch {
+        setError('Error de conexión. Intenta de nuevo o escríbenos por WhatsApp.');
+      } finally {
+        setLoading(false);
+      }
+      return;
+    }
 
     const subject = encodeURIComponent(`Solicitud de invitacion | ${form.name}`);
     const body = encodeURIComponent(
       `Nombre: ${form.name}\nEmail: ${form.email}\nFecha del evento: ${form.eventDate || 'Por definir'}\n\nMensaje:\n${form.message}`
     );
-
     setSent(true);
     window.location.href = `mailto:${RECIPIENT_EMAIL}?subject=${subject}&body=${body}`;
   };
@@ -38,15 +67,17 @@ export function ContactSection() {
           </p>
 
           <div className="mt-8 space-y-3">
-            <Link
-              href="/demo"
+            <a
+              href="https://boda.psicodemy.com"
+              target="_blank"
+              rel="noreferrer"
               className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent sm:w-auto"
             >
               Ver invitacion de ejemplo
               <ArrowRight size={16} />
-            </Link>
+            </a>
             <a
-              href="https://wa.me/523312345678"
+              href="https://wa.me/529614389077"
               target="_blank"
               rel="noreferrer"
               className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full border border-primary/30 bg-white/80 px-5 py-3 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/5 sm:w-auto"
@@ -121,13 +152,23 @@ export function ContactSection() {
 
           <button
             type="submit"
-            className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent"
+            disabled={loading}
+            className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            Quiero reservar mi invitacion
+            {loading ? 'Enviando…' : 'Quiero reservar mi invitacion'}
             <ArrowRight size={16} />
           </button>
 
-          {sent ? (
+          {error ? (
+            <p className="rounded-xl border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-800">
+              {error}
+            </p>
+          ) : null}
+          {sent && CONTACT_API_URL ? (
+            <p className="rounded-xl border border-accent/30 bg-accent/10 px-3 py-2 text-sm text-primary">
+              Solicitud enviada. Revisa tu correo; te hemos enviado una confirmación.
+            </p>
+          ) : sent && !CONTACT_API_URL ? (
             <p className="rounded-xl border border-accent/30 bg-accent/10 px-3 py-2 text-sm text-primary">
               Se abrio tu correo para completar la reserva. Si lo prefieres, escribe directo a {RECIPIENT_EMAIL}.
             </p>

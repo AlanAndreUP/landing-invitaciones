@@ -51,13 +51,15 @@ export function SolutionSection() {
             Comprar invitacion digital
             <ArrowRight size={16} />
           </Link>
-          <Link
-            href="/demo"
+          <a
+            href="https://boda.psicodemy.com"
+            target="_blank"
+            rel="noreferrer"
             className="focus-ring inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/80 px-6 py-3 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/5"
           >
             Ver ejemplo real
             <Sparkles size={16} />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
