@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Invitaciones Digitales de Boda</title>
+  <desc id="desc">Landing comercial para invitaciones digitales elegantes</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F7F4" />
+      <stop offset="100%" stop-color="#E9EDDF" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="70" y="70" width="1060" height="490" rx="30" fill="#ffffff" fill-opacity="0.72" stroke="#606F49" stroke-opacity="0.25" />
+  <text x="120" y="220" fill="#606F49" font-size="30" font-family="Inter, Arial, sans-serif" letter-spacing="4">INVITACIONES DIGITALES</text>
+  <text x="120" y="320" fill="#2B2B2B" font-size="88" font-family="'Playfair Display', Georgia, serif">Boda Elegante</text>
+  <text x="120" y="390" fill="#2B2B2B" fill-opacity="0.8" font-size="34" font-family="Inter, Arial, sans-serif">
+    RSVP + Correos Automaticos + QR + Demo incluida
+  </text>
+</svg>

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f8f7f4;
+  --primary: #606f49;
+  --accent: #728359;
+  --secondary: #849669;
+  --ink: #2b2b2b;
+  --line: rgba(96, 111, 73, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(132, 150, 105, 0.09), transparent 35%),
+    radial-gradient(circle at 85% 0%, rgba(96, 111, 73, 0.1), transparent 30%),
+    linear-gradient(125deg, rgba(96, 111, 73, 0.04), rgba(248, 247, 244, 0.98));
+  font-family: Inter, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 py-20 md:px-10;
+}
+
+.paper-surface {
+  @apply rounded-3xl border border-[color:var(--line)] bg-[rgba(248,247,244,0.9)] backdrop-blur;
+  box-shadow: 0 14px 40px rgba(43, 43, 43, 0.08);
+}
+
+.soft-border {
+  border: 1px solid var(--line);
+}
+
+.chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-primary;
+}
+
+.paper-cut {
+  height: 64px;
+  background: var(--paper);
+  clip-path: polygon(0 25%, 8% 40%, 17% 28%, 28% 47%, 39% 26%, 51% 43%, 63% 22%, 75% 47%, 87% 24%, 100% 44%, 100% 100%, 0 100%);
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(96, 111, 73, 0.55);
+  outline-offset: 2px;
+}
+
+.texture-panel {
+  background-image:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.08)),
+    repeating-linear-gradient(135deg, rgba(96, 111, 73, 0.05), rgba(96, 111, 73, 0.05) 2px, transparent 2px, transparent 8px);
+}

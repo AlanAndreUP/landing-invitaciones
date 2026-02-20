@@ -1,0 +1,134 @@
+{
+  "couple": {
+    "firstName": "SOFIA",
+    "lastName": "MARTINEZ",
+    "partnerFirstName": "DIEGO",
+    "partnerLastName": "HERRERA",
+    "initials": "S&D"
+  },
+  "announcement": [
+    "Con enorme alegria, junto a nuestras familias, queremos compartir este momento contigo.",
+    "Tu presencia hara de nuestra boda un recuerdo inolvidable."
+  ],
+  "event": {
+    "title": "Nuestra Boda",
+    "dateIso": "2026-11-14T17:00:00-06:00",
+    "dateLabel": "14 de noviembre de 2026",
+    "timeLabel": "5:00 PM",
+    "city": "Guadalajara, Jalisco",
+    "venue": "Hacienda Los Olivos",
+    "address": "Camino Real 210, Zapopan, Jalisco",
+    "parking": "Estacionamiento con valet incluido"
+  },
+  "ceremony": {
+    "place": "Capilla San Jose",
+    "time": "5:00 PM",
+    "mapsUrl": "https://maps.google.com/?q=20.701648,-103.412261",
+    "wazeUrl": "https://waze.com/ul?ll=20.701648,-103.412261&navigate=yes"
+  },
+  "reception": {
+    "place": "Jardin Principal Hacienda Los Olivos",
+    "time": "7:00 PM",
+    "mapsUrl": "https://maps.google.com/?q=20.701648,-103.412261",
+    "wazeUrl": "https://waze.com/ul?ll=20.701648,-103.412261&navigate=yes"
+  },
+  "timeline": [
+    {
+      "time": "5:00 PM",
+      "title": "Ceremonia",
+      "description": "Intercambio de votos en la capilla.",
+      "icon": "ceremony"
+    },
+    {
+      "time": "6:00 PM",
+      "title": "Sesion de fotos",
+      "description": "Brindis de bienvenida y fotos con familia.",
+      "icon": "photos"
+    },
+    {
+      "time": "7:00 PM",
+      "title": "Recepcion",
+      "description": "Cena de tres tiempos y brindis.",
+      "icon": "reception"
+    },
+    {
+      "time": "9:30 PM",
+      "title": "Baile",
+      "description": "Apertura de pista y celebracion.",
+      "icon": "party"
+    }
+  ],
+  "dressCode": {
+    "style": "Formal",
+    "women": "Vestido largo o midi en tonos lisos.",
+    "men": "Traje oscuro con corbata o pajarita.",
+    "restrictedColors": ["#FFFFFF", "#000000", "#D4AF37"],
+    "palette": ["#606F49", "#728359", "#849669", "#B2BFA0"],
+    "closingMessage": "Te agradecemos evitar blanco, negro total y dorado brillante."
+  },
+  "giftRegistry": {
+    "message": "Tu presencia es nuestro mejor regalo. Si deseas obsequiarnos algo, aqui encontraras opciones.",
+    "stores": [
+      {
+        "name": "Liverpool",
+        "url": "https://mesaderegalos.liverpool.com.mx"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com.mx/wedding"
+      }
+    ],
+    "bank": {
+      "bank": "BBVA",
+      "holder": "Sofia Martinez",
+      "clabe": "012345678901234567",
+      "account": "1234567890",
+      "card": "4152 3100 9843 2109"
+    }
+  },
+  "rsvp": {
+    "maxGuests": "2 lugares",
+    "deadline": "20 de octubre de 2026",
+    "apiEndpoint": "https://example-rsvp-worker.workers.dev",
+    "successMessage": "Gracias por confirmar. Recibiras un correo con tu QR e invitacion personalizada."
+  },
+  "location": {
+    "mapsUrl": "https://maps.google.com/?q=20.701648,-103.412261",
+    "wazeUrl": "https://waze.com/ul?ll=20.701648,-103.412261&navigate=yes",
+    "transport": "Habra zona de ascenso/descenso para transporte por app.",
+    "parking": "Valet parking disponible durante todo el evento."
+  },
+  "hotels": [
+    {
+      "name": "Hotel Olivos Boutique",
+      "address": "Av. de las Rosas 120, Zapopan",
+      "phone": "+52 33 1234 9876",
+      "web": "https://example.com/olivos",
+      "distance": "8 min",
+      "price": "Desde $2,100 MXN",
+      "amenities": "Desayuno, shuttle, wifi"
+    },
+    {
+      "name": "Casa Central Suites",
+      "address": "Calle Central 45, Zapopan",
+      "phone": "+52 33 7654 3210",
+      "web": "https://example.com/casacentral",
+      "distance": "12 min",
+      "price": "Desde $1,650 MXN",
+      "amenities": "Parking, gimnasio, wifi"
+    }
+  ],
+  "footer": {
+    "tagline": "Gracias por celebrar con nosotros",
+    "copyright": "2026 Sofia & Diego"
+  },
+  "music": {
+    "trackTitle": "Perfect (Instrumental)",
+    "artist": "Ed Sheeran",
+    "trackUrl": "/audio/perfect.mp3"
+  },
+  "wallet": {
+    "enabled": true,
+    "url": "https://qr.psicodemy.com"
+  }
+}
