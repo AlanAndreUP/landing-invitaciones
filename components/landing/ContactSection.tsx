@@ -31,10 +31,10 @@ export function ContactSection() {
     <section id="contacto" className="section-shell py-14">
       <div className="paper-surface grid gap-8 p-8 md:grid-cols-[1fr_1fr] md:p-10">
         <div>
-          <p className="chip">Ultimo paso</p>
-          <h2 className="mt-5 font-display text-3xl text-ink sm:text-4xl">Reserva hoy y vive tu proceso de boda con calma</h2>
+          <p className="chip">Reserva ahora</p>
+          <h2 className="mt-5 font-display text-3xl text-ink sm:text-4xl">Compra hoy tu invitacion digital de boda</h2>
           <p className="mt-4 text-base leading-relaxed text-ink/80">
-            Si ya imaginan como quieren que se vea su invitacion, este es el momento de apartar su fecha y comenzar.
+            Si buscas invitaciones de boda modernas, elegantes y faciles de compartir, aparta tu fecha hoy mismo.
           </p>
 
           <div className="mt-8 space-y-3">
@@ -42,7 +42,7 @@ export function ContactSection() {
               href="/demo"
               className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent sm:w-auto"
             >
-              Ver ejemplo real
+              Ver invitacion de ejemplo
               <ArrowRight size={16} />
             </Link>
             <a
@@ -123,7 +123,7 @@ export function ContactSection() {
             type="submit"
             className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent"
           >
-            Reservar mi invitacion
+            Quiero reservar mi invitacion
             <ArrowRight size={16} />
           </button>
 

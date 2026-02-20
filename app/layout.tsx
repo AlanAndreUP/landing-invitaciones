@@ -2,28 +2,33 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://invitaciones-elegantes.example.com'),
-  title: 'Invitaciones de Boda Elegantes | Reserva Tu Fecha',
+  metadataBase: new URL('https://noviosfelices.online'),
+  title: 'Invitaciones Digitales de Boda Elegantes | Reserva Hoy',
   description:
-    'Una invitacion elegante para organizar tu boda con calma, sorprender a tus invitados y vivir este momento sin estres.',
+    'Invitaciones digitales de boda elegantes con confirmacion de asistencia. Sorprende a tus invitados y reserva hoy con precio especial.',
   keywords: [
-    'invitacion digital boda',
-    'invitaciones elegantes',
-    'organizacion de boda',
-    'invitacion para novios',
-    'boda moderna'
+    'invitaciones digitales de boda',
+    'invitaciones web de boda',
+    'invitacion digital boda elegante',
+    'invitaciones de boda online',
+    'comprar invitacion digital de boda',
+    'invitaciones digitales boda precios',
+    'confirmacion de asistencia boda',
+    'invitaciones boda modernas',
+    'invitacion digital para novios',
+    'invitaciones boda mexico'
   ],
   openGraph: {
-    title: 'Invitaciones de Boda Elegantes',
-    description: 'Sorprende a tus invitados y organiza tu boda con una invitacion que enamora desde el primer clic.',
+    title: 'Invitaciones Digitales de Boda Elegantes | Reserva Hoy',
+    description: 'Invitaciones de boda online elegantes con confirmacion de asistencia y reserva inmediata.',
     type: 'website',
     locale: 'es_MX',
     images: [{ url: '/og-cover.svg', width: 1200, height: 630 }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Invitaciones de Boda Elegantes',
-    description: 'La forma mas bella de invitar, organizar y emocionar.',
+    title: 'Invitaciones Digitales de Boda Elegantes',
+    description: 'Reserva hoy tu invitacion web de boda y sorprende a tus invitados.',
     images: ['/og-cover.svg']
   }
 };

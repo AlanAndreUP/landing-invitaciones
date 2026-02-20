@@ -7,7 +7,7 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 const benefits = [
   {
     title: 'Impacto visual que enamora',
-    description: 'Una primera impresion que transmite romance, buen gusto y exclusividad.',
+    description: 'Tu invitacion digital de boda crea una primera impresion romantica, elegante y memorable.',
     icon: Image
   },
   {
@@ -17,7 +17,7 @@ const benefits = [
   },
   {
     title: 'Organizacion sin estres',
-    description: 'Todo fluye con claridad para que vivas tu etapa de boda con mas calma.',
+    description: 'La confirmacion de asistencia se vuelve mas simple para organizar tu lista de invitados.',
     icon: SmilePlus
   },
   {
@@ -37,8 +37,8 @@ export function BenefitsSection() {
     <section className="section-shell py-12">
       <SectionHeading
         eyebrow="Beneficios"
-        title="Todo lo que ganas cuando eliges una invitacion que si representa tu historia"
-        description="No es solo una invitacion, es la forma en que presentas el evento mas importante de tu vida."
+        title="Por que las novias eligen invitaciones digitales de boda"
+        description="Mas estilo, mas orden y mas tranquilidad para que disfrutes cada etapa de tu boda."
       />
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

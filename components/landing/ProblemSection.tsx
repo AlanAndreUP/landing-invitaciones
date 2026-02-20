@@ -31,9 +31,9 @@ export function ProblemSection() {
   return (
     <section className="section-shell py-12">
       <SectionHeading
-        eyebrow="El problema"
-        title="Planear tu boda no deberia sentirse como una carrera contra el caos"
-        description="Tu energia debe estar en disfrutar este momento, no en perseguir confirmaciones ni resolver pendientes a ultima hora."
+        eyebrow="Problemas reales"
+        title="Organizar invitados para tu boda puede volverse agotador"
+        description="Cuando no tienes un sistema claro de confirmacion de asistencia, todo se vuelve mas pesado justo cuando deberias estar disfrutando."
       />
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">

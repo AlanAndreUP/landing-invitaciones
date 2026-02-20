@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CalendarCheck, MailCheck, Palette, QrCode } from 'lucide-react';
 
 const badges = [
-  'Diseno elegante que enamora al instante',
-  'Confirmaciones claras sin perseguir mensajes',
-  'Invitados emocionados desde el primer clic',
-  'Una boda moderna, organizada y memorable'
+  'Invitaciones digitales de boda elegantes',
+  'Invitacion web de boda lista para compartir',
+  'Confirmacion de asistencia clara y rapida',
+  'Boda moderna, organizada y sin estres'
 ];
 
 export function LandingHero() {
@@ -20,29 +20,29 @@ export function LandingHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: 'easeOut' }}
         >
-          <p className="chip">Invitaciones de Boda</p>
+          <p className="chip">Invitaciones Digitales de Boda</p>
           <h1 className="mt-6 max-w-2xl font-display text-4xl leading-tight text-ink sm:text-5xl md:text-6xl">
-            Haz que tus invitados se enamoren de tu boda antes del gran dia.
+            Invitaciones digitales de boda elegantes con confirmacion de asistencia.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink/80 sm:text-lg">
-            Una invitacion elegante que hace tu boda mas especial, mantiene todo ordenado y te regala la tranquilidad de disfrutar esta etapa sin estres.
+            Haz que tu boda se sienta exclusiva desde el primer clic, sorprende a tus invitados y organiza confirmaciones sin caos para disfrutar esta etapa con tranquilidad.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#contacto"
+              className="focus-ring inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent"
+            >
+              Reservar mi invitacion ahora
+              <MailCheck size={16} />
+            </a>
             <Link
               href="/demo"
-              className="focus-ring inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent"
+              className="focus-ring inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/80 px-6 py-3 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/5"
             >
               Ver ejemplo real
               <ArrowRight size={16} />
             </Link>
-            <a
-              href="#contacto"
-              className="focus-ring inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/80 px-6 py-3 text-sm font-semibold text-primary transition hover:border-primary hover:bg-primary/5"
-            >
-              Reservar ahora
-              <MailCheck size={16} />
-            </a>
           </div>
 
           <ul className="mt-8 grid gap-2 sm:grid-cols-2">
@@ -70,30 +70,30 @@ export function LandingHero() {
             <div className="soft-border rounded-2xl bg-white/80 p-4">
               <div className="flex items-center gap-2 text-sm font-semibold text-primary">
                 <CalendarCheck size={16} />
-                Elegancia desde el inicio
+                Invitacion de boda que enamora
               </div>
               <p className="mt-2 text-sm text-ink/80">
-                Una presentacion romantica y cuidada que transmite el estilo de su gran dia.
+                Una presentacion romantica y elegante que hace que tus invitados hablen de tu boda desde el primer momento.
               </p>
             </div>
 
             <div className="soft-border rounded-2xl bg-white/80 p-4">
               <div className="flex items-center gap-2 text-sm font-semibold text-primary">
                 <Palette size={16} />
-                Orden sin complicaciones
+                Confirmaciones sin perseguir mensajes
               </div>
               <p className="mt-2 text-sm text-ink/80">
-                Menos dudas, menos mensajes y mas tiempo para disfrutar su compromiso.
+                Sabe quien asistira y toma decisiones con calma para mesas, lugares y detalles de tu gran dia.
               </p>
             </div>
 
             <div className="soft-border rounded-2xl bg-white/80 p-4">
               <div className="flex items-center gap-2 text-sm font-semibold text-primary">
                 <QrCode size={16} />
-                Una experiencia que sorprende
+                Experiencia premium para novios
               </div>
               <p className="mt-2 text-sm text-ink/80">
-                Sus invitados sentiran que estan frente a una boda exclusiva desde el primer momento.
+                Tu invitacion digital de boda combina estilo, orden y emocion en un solo lugar.
               </p>
             </div>
           </div>

@@ -5,10 +5,10 @@ export function UrgencySection() {
   return (
     <section className="section-shell py-12">
       <div className="paper-surface texture-panel p-8 md:p-10">
-        <p className="chip">Reserva tu fecha</p>
-        <h2 className="mt-5 font-display text-3xl text-ink sm:text-4xl">No dejes tu invitacion para despues</h2>
+        <p className="chip">Urgencia</p>
+        <h2 className="mt-5 font-display text-3xl text-ink sm:text-4xl">No te quedes sin fecha para tu invitacion digital de boda</h2>
         <p className="mt-4 text-base leading-relaxed text-ink/80">
-          Estamos en temporada alta de bodas y cada semana se ocupan nuevos espacios. Si quieres asegurar tu fecha, este es el mejor momento para apartar.
+          Estamos en temporada alta y los cupos se ocupan rapido. Si quieres asegurar tu lugar, reserva hoy y evita quedarte fuera.
         </p>
 
         <div className="mt-7 grid gap-3 md:grid-cols-3">
@@ -25,7 +25,7 @@ export function UrgencySection() {
               <Clock3 size={16} />
               Temporada alta 2026
             </div>
-            <p className="mt-2">Las fechas para bodas entre abril y noviembre se reservan primero.</p>
+            <p className="mt-2">Las fechas para bodas entre marzo y noviembre de 2026 son las primeras en agotarse.</p>
           </article>
 
           <article className="rounded-2xl border border-primary/20 bg-white/80 p-4 text-sm text-ink/80">
@@ -33,7 +33,7 @@ export function UrgencySection() {
               <Clock3 size={16} />
               Descuento vigente
             </div>
-            <p className="mt-2">Reserva antes del 31 de marzo de 2026 y recibe 20% de descuento.</p>
+            <p className="mt-2">Reserva antes del 30 de abril de 2026 y recibe 20% de descuento en tu invitacion.</p>
           </article>
         </div>
 

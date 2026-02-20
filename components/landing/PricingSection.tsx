@@ -5,20 +5,20 @@ const plans = [
   {
     name: 'Esencial',
     price: 'Desde $2,490 MXN',
-    description: 'Landing elegante + RSVP con correo de confirmacion.',
-    features: ['Secciones base', 'Maps/Waze', 'Countdown opcional', 'Soporte por WhatsApp']
+    description: 'Ideal para novios que quieren una invitacion digital de boda elegante y lista para compartir.',
+    features: ['Diseno romantico', 'Confirmacion de asistencia', 'Envio rapido', 'Soporte por WhatsApp']
   },
   {
     name: 'Premium',
     price: 'Desde $3,590 MXN',
-    description: 'Incluye galeria, hoteles, QR por correo y ajustes visuales a marca.',
-    features: ['Todo Esencial', 'Plantillas de correo', 'Integracion QR', 'Boton calendario .ics']
+    description: 'La opcion favorita para parejas que buscan una experiencia mas completa y exclusiva.',
+    features: ['Todo Esencial', 'Secciones adicionales', 'Ajustes de estilo', 'Prioridad de entrega']
   },
   {
-    name: 'Estudio',
+    name: 'Signature',
     price: 'Cotizacion personalizada',
-    description: 'Multiples eventos, copywriting, analytics y branding completo.',
-    features: ['Diseno a medida', 'Integraciones adicionales', 'Acompanamiento completo', 'Entrega prioritaria']
+    description: 'Para bodas con alto nivel de personalizacion y una presentacion totalmente a medida.',
+    features: ['Diseno exclusivo', 'Asesoria personalizada', 'Acompanamiento cercano', 'Entrega premium']
   }
 ];
 
@@ -26,9 +26,9 @@ export function PricingSection() {
   return (
     <section id="precios" className="section-shell py-12">
       <SectionHeading
-        eyebrow="Planes"
-        title="Vende por paquetes sin rehacer el producto"
-        description="Estructura comercial lista para ofrecer una opcion rapida o una version completamente personalizada."
+        eyebrow="Precios"
+        title="Invitaciones digitales de boda: opciones para reservar hoy"
+        description="Elige la opcion que mejor encaja con tu estilo, presupuesto y fecha de boda."
       />
 
       <div className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -53,7 +53,7 @@ export function PricingSection() {
               href="#contacto"
               className="focus-ring mt-6 inline-flex justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent"
             >
-              Elegir plan
+              Reservar esta opcion
             </Link>
           </article>
         ))}

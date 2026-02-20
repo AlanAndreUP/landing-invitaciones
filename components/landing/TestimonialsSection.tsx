@@ -26,9 +26,9 @@ export function TestimonialsSection() {
   return (
     <section className="section-shell py-12">
       <SectionHeading
-        eyebrow="Historias reales"
-        title="Parejas que hoy recuerdan su proceso con alegria"
-        description="Cuando todo se siente mas claro y elegante, disfrutar la organizacion tambien se vuelve parte del recuerdo."
+        eyebrow="Prueba social"
+        title="Parejas que ya reservaron su invitacion web de boda"
+        description="Historias de novios que pasaron del caos a una organizacion clara y elegante."
       />
 
       <div className="mt-10 grid gap-4 md:grid-cols-3">
